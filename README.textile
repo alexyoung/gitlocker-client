@@ -1,0 +1,3 @@
+This is a client for "Gitlocker":http://github.com/alexyoung/gitlocker/ and it includes a Rails plugin.
+
+The Rails plugin isn't fully tested yet, it's still being actively developed.  Fortunately it's fairly simple!
