@@ -1,3 +1,4 @@
 *.sw?
 tmp/
 config.yml
+*.gem

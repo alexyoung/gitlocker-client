@@ -1,3 +1,19 @@
 This is a client for "Gitlocker":http://github.com/alexyoung/gitlocker/ and it includes a Rails plugin.
 
 The Rails plugin isn't fully tested yet, it's still being actively developed.  Fortunately it's fairly simple!
+
+h3. Installation
+
+# <code>gem install gitlocker</code>
+# <code>gem install gitlocker-client</code>
+# Run gitlocker: <code>gitlocker</code>
+# Add the plugin to your project's <code>environment.rb</code> file: <code>config.gem 'gitlocker-client', :lib => 'rails'</code>
+# Add gitlocker to one of your models
+
+<code>
+  gitlocker 'http://localhost:4567',
+    :fields  => :source,
+    :repo_id => Proc.new { |d| "my_app_#{d.user_id}" }
+</code>
+
+Gitlocker should be installed somewhere as a proper rack app for production.
